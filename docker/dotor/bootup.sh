@@ -35,7 +35,4 @@ if [ "$HOPS" = "2" ]; then
     done
 fi
 
-dnscrypt-proxy -check
-#dnscrypt-proxy -list
-dnscrypt-proxy
 

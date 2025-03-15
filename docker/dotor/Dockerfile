@@ -18,7 +18,6 @@ ENV EXIT_NODES=
 ENV EXCLUDE_NODES=
 ENV HOPS=3
 WORKDIR /etc/dnscrypt-proxy
-COPY dnscrypt-proxy.toml .
 COPY torrc_template /etc/tor/torrc
 COPY relays.py .
 COPY bootup.sh .
