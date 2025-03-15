@@ -2,9 +2,11 @@
 #include <sys/socket.h>
 #include <iostream>
 #include <netinet/in.h>
-#include <cstring>
-#include <arpa/inet.h>
-#include <unistd.h>
+#include <string>
+#include <stdio.h>
+//#include <cstring>
+//#include <arpa/inet.h>
+//#include <unistd.h>
 
 int main(){
 
