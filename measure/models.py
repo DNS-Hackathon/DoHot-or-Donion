@@ -38,7 +38,7 @@ class Condition:
     def __post_init__(self):
         if self.tor == (self.variant is None):
             raise ValueError("Set a variant if and only if it is a tor condition.")
-        if self.container_name is not None:
+        if self.container_name is None:
             self.container_name = random_container_name()
 
         if self.docker_run_command[:4] not in (DOCKER_RUN_PREFIX, ["false", "$NAME"]):

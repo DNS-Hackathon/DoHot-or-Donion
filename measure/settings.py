@@ -1,7 +1,6 @@
 from .models import Condition, Variant, Protocol
 
-
-CONDITIONS = [
+CONDITIONS: list[Condition] = [
     Condition(
         protocol=Protocol.DO53,
         tor=False,

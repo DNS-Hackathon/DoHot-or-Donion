@@ -9,23 +9,22 @@ from .models import Condition, Measurement
 logger = getLogger(__name__)
 
 
-def resolve(condition: Condition):
+def resolve(
+    condition: Condition,
+    resolver: str = "172.17.0.1",
+    port: int = 1337,
+    wait_for_container_start: int = 20,
+):
     domain_name = random_domain_name()
-    if condition.tor:
-        resolver = "172.17.0.1"
-        port = 1337
-    else:
-        resolver = "1.1.1.1"
-        port = 53
     logger.info("Starting %s", condition.protocol)
     condition.docker_run()
-    sleep(20)
+    sleep(wait_for_container_start)
     logger.info("Sending random NXDOMAIN query for %s", domain_name)
     dig_begin = datetime.datetime.now()
     try:
         dig_out = check_output(
             ["dig", f"@{resolver}", "-p", str(port), domain_name]
-        ).encode("utf-8")
+        ).decode("utf-8")
     except CalledProcessError:
         dig_out = None
     dig_end = datetime.datetime.now()
