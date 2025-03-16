@@ -7,29 +7,29 @@ hostname_pattern = re.compile(r'^.+(?= IN A)')
 dumme_key = b'\x3a\x7b\x1c\x9d\x2e\x0f\x46\x81\x59\xa3\xc7\xe2\xb8\xd4\xf0\x16\x35\x92\x8e\x47'
 
 def form_cell(hostname, secret):
-
-    payload = b'\x03' # Address type 'hostname'
-    payload += hostname.encode('utf-8')#.bytes()
+    hex = []
+    p = [b'\x03'] # Address type 'hostname'
+    p.append(hostname.encode('utf-8'))#.bytes()
+    payload = b''.join(p)
     print(payload)
     digest = hmac.new(secret, payload, sha1).digest()
     #print(f'HMAC digest size: {digest.digest_size()}')
     #Cell header
-    hex = b'\x00\x04' #circuit_id
-    hex += b'\x03' #Cell-type = REALAY
-    hex += b'\x02\x00' # payload-size (fixed length 512)
+    hex.append(b'\x00\x04') #circuit_id
+    hex.append(b'\x03') #Cell-type = REALAY
+    hex.append(b'\x02\x00') # payload-size (fixed length 512)
     # RELAY header
-    hex += b'\x07' # Type = RELAY_RESOLVE
-    hex += b'\x00' # Recognised, flow control and default 0
-    hex += b'\x00' #stream-id, 0 means entire circuit
-    hex += digest
-    hex += b'\x02\x00' # payload-size, repeated,  (fixed length 512)
+    hex.append(b'\x07') # Type = RELAY_RESOLVE
+    hex.append(b'\x00') # Recognised, flow control and default 0
+    hex.append(b'\x00') #stream-id, 0 means entire circuit
+    hex.append(digest[:3])
+    hex.append(b'\x02\x00') # payload-size, repeated,  (fixed length 512)
     # PAYLOAD
-    hex+= payload
+    hex.append(payload)
     for _  in range(512-len(hex)):
-        hex += b'\x00'
-    
-    #Done like this due to some dev-stuff, might change later bu8t it works so....    
-    cell = hex
+        hex.append(b'\x00')
+  
+    cell = b''.join(hex)
     return cell
 
 
