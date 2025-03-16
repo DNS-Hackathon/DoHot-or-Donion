@@ -2,10 +2,10 @@ FROM ubuntu
 SHELL ["/bin/bash", "-c"]
 
 RUN apt update && apt upgrade -y && apt install -y \
-    vim netcat-traditional net-tools dnscrypt-proxy ca-certificates
+    vim netcat-traditional net-tools unbound dnsutils
 RUN rm -rf /var/lib/apt/lists/*
 
-WORKDIR /etc/dnscrypt-proxy
-COPY dnscrypt-proxy.toml .
+WORKDIR /etc/unbound
+COPY unbound.conf .
 COPY bootup.sh .
 CMD ["./bootup.sh"]

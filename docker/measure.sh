@@ -2,15 +2,14 @@
 
 #queryfile=$2
 
-if [ $1 = 'do53' ]; then
-    resolver=1.1.1.1
-    port=53
-elif [[ $1 == "dohot"* || $1 == "doh" || $1 == "dotot"* ]]; then
-    resolver=172.17.0.1
-    port=1337
-fi
+resolver=172.17.0.1
+port=1337
 
-if [ $1 = 'dohot-worst' ]; then
+if [ $1 = 'do53' ]; then
+    echo "$(date +"%Y-%m-%dT%H:%M:%S"): Starting Do53 (20sec)"
+    docker run --rm -d -p 1337:53/tcp -p 1337:53/udp --name do53-container do53-image > /dev/null
+    sleep 20
+elif [ $1 = 'dohot-worst' ]; then
     echo "$(date +"%Y-%m-%dT%H:%M:%S"): Starting DoHoT Worst (20sec)"
     docker run --rm -d -p 1337:53/tcp -p 1337:53/udp --name dohot-container dohot-image > /dev/null
     sleep 20
