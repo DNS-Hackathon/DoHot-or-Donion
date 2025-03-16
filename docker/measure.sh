@@ -1,6 +1,6 @@
 #!/bin/bash
 
-queryfile=$2
+#queryfile=$2
 
 if [ $1 = 'do53' ]; then
     resolver=1.1.1.1
@@ -48,7 +48,7 @@ fi
 #	dnsperf -d /tmp/domains.txt -s $resolver -p $port -Q 100 -t 10
 
 echo "$(date +"%Y-%m-%dT%H:%M:%S"): Sending random NXDOMAIN query"
-dig @$resolver -p $port A$(mktemp -u XXXXXXXX)
+dig @$resolver -p $port DNSHACKATHON-$(mktemp -u XXXXXXXX).se
 
 if [[ $1 == "dohot"* ]]; then
     echo "$(date +"%Y-%m-%dT%H:%M:%S"): Stopping DoHoT"
