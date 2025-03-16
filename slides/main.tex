@@ -3,6 +3,7 @@
 \usepackage{tikz}
 \usepackage{textcomp}
 \usepackage[absolute,overlay]{textpos}
+\usepackage[normalem]{ulem}
 
 \setbeamercovered{transparent}
 
@@ -33,14 +34,21 @@
 	\setcounter{showSlideNumbers}{1}
 
     \begin{frame}{Introduction}
+        Anonymous Queries
         \begin{itemize}
-            \item Anonymous Queries
             \item Proxy between Client and Resolver
             \begin{itemize}
                 \item Oblivious DNS
                 \item Oblivious DNS-over-HTTPS (ODoH)
                 \item DNS-over-HTTPS-over-Tor (DoHoT)
             \end{itemize}
+        \end{itemize}
+        \vspace{1em}
+        Goal: change configurations and compare performance
+        \begin{itemize}
+            \item Identify parameters
+            \item Create containers for protocols
+            \item Measure latency
         \end{itemize}
     \end{frame}
 
@@ -77,7 +85,7 @@
             \end{column}
             \begin{column}{.5\textwidth}
                 \begin{itemize}
-                    \item DNS-over-Tor (DoTor)
+                    \item \sout{DNS-over-Tor (DoTor)}
                     \item DoH-over-Tor (DoHoT)
                     \item DoT-over-Tor (DoToT)
                 \end{itemize}
