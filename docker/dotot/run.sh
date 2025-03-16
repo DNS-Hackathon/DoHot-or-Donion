@@ -43,6 +43,6 @@ docker run --rm --name dotot-container \
     -e EXIT_NODES="$EXIT" \
     -e EXCLUDE_NODES="$EXCLUDE" \
     -e HOPS="$HOPS" \
-    -p 127.0.0.1:8053:8053/udp \
-    -p 127.0.0.1:8053:8053/tcp \
+    -p 127.0.0.1:1337:8053/udp \
+    -p 127.0.0.1:1337:8053/tcp \
     dotot-image
