@@ -1,16 +1,15 @@
-from enum import Enum
-from dataclasses import fields
+import datetime
 
-from .models import Condition, Measurement
+from .models import Measurement
 from .settings import CONDITIONS
 
 
 def fieldnames():
-    condition = CONDITIONS[0]
     return list(
         row(
             Measurement(
-                conditions=CONDITIONS[0],
+                condition=CONDITIONS[0],
+                domain_name="example.com",
                 dig_begin=datetime.datetime.now(),
                 dig_end=datetime.datetime.now(),
                 dig_out="foo",
