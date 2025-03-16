@@ -143,14 +143,6 @@ se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 
 ;; MSG SIZE  rcvd: 157
 
 "
-cfmjpvtmilmi
-tlovcmevzjxo
-yowebxwyxilw
-bbzrnvlehoxm
-bsakvrzmimdz
-ccktslzdjtes
-cfmjpvtmilmi
-tlovcmevzjxo
 DOHOT,DEFAULT,DNSHACKATHON-wihkvxhimztecxjxmvuxeqzrhreyjrqoergf.se,TRUE,2025-03-16 14:03:00.818891,2025-03-16 14:03:01.285714,"
 ; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-wihkvxhimztecxjxmvuxeqzrhreyjrqoergf.se
 ; (1 server found)
@@ -295,13 +287,6 @@ se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 
 ;; MSG SIZE  rcvd: 157
 
 "
-yowebxwyxilw
-bbzrnvlehoxm
-bsakvrzmimdz
-ccktslzdjtes
-cfmjpvtmilmi
-tlovcmevzjxo
-yowebxwyxilw
 DOTOT,DEFAULT,DNSHACKATHON-dmsutabsnnxfnnrhopivleodenapbknlhunt.se,TRUE,2025-03-16 14:07:37.053760,2025-03-16 14:07:37.685116,"
 ; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-dmsutabsnnxfnnrhopivleodenapbknlhunt.se
 ; (1 server found)
@@ -424,12 +409,6 @@ dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 s
 ;; MSG SIZE  rcvd: 1129
 
 "
-bbzrnvlehoxm
-bsakvrzmimdz
-ccktslzdjtes
-cfmjpvtmilmi
-tlovcmevzjxo
-yowebxwyxilw
 DOTOT,GOOD,DNSHACKATHON-aqmcpgailtveouyfzautldqungonclgxazqs.se,TRUE,2025-03-16 14:11:43.194600,2025-03-16 14:11:43.637723,"
 ; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-aqmcpgailtveouyfzautldqungonclgxazqs.se
 ; (1 server found)
