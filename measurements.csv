@@ -1,0 +1,554 @@
+protocol,variant,domain_name,tor,dig_begin,dig_end,dig_out
+DO53,,DNSHACKATHON-krngesyhgpgkkrdadixbewzvmlaqkeycokdl.se,FALSE,2025-03-16 13:58:24.900042,2025-03-16 13:58:39.936309,
+DOH,,DNSHACKATHON-ckfmhsfpgubwneqwakvyphvfdepdeyaqpnfr.se,FALSE,2025-03-16 13:59:10.426268,2025-03-16 13:59:10.515614,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-ckfmhsfpgubwneqwakvyphvfdepdeyaqpnfr.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 14626
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-ckfmhsfpgubwneqwakvyphvfdepdeyaqpnfr.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 69 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 13:59:10 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,DEFAULT,DNSHACKATHON-yhtdqnjhkgibqkpqfwqqatplfuglmktzcrkx.se,TRUE,2025-03-16 13:59:41.020498,2025-03-16 13:59:41.215928,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-yhtdqnjhkgibqkpqfwqqatplfuglmktzcrkx.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 55270
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;DNSHACKATHON-yhtdqnjhkgibqkpqfwqqatplfuglmktzcrkx.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 175 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 13:59:41 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,GOOD,DNSHACKATHON-znwjcwjfrdeqabspwqblssnhnvjopgtparpi.se,TRUE,2025-03-16 14:00:11.680733,2025-03-16 14:00:12.042901,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-znwjcwjfrdeqabspwqblssnhnvjopgtparpi.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 54082
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-znwjcwjfrdeqabspwqblssnhnvjopgtparpi.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 343 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:00:12 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOTOT,DEFAULT,DNSHACKATHON-qjphrlunmgpdlgifjrxmikudmbvzcxiipqyv.se,TRUE,2025-03-16 14:00:42.513967,2025-03-16 14:00:43.203162,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-qjphrlunmgpdlgifjrxmikudmbvzcxiipqyv.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 34683
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-qjphrlunmgpdlgifjrxmikudmbvzcxiipqyv.se. IN A
+
+;; AUTHORITY SECTION:
+se.			7200	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+se.			7200	IN	RRSIG	SOA 8 1 172800 20250330121628 20250316104628 8961 se. gvQnH3hYtaciJTjclixbAaRuDRM7bACsrBQ3U+cSU4GbwKqjPRUjlmA9 lZ9s5h0JvMnCasB185PL9/7fmsmOjzVBxG03qxljtFJ6d8voTPkoA577 bHx+PIE3Np/QfQcTug3sdz5jekKNMufn/ivARiwSY2hKwTIXQaUeWDiJ Cn0pN0XHzcBUYPt8XFYMvNoPaBEQm3dEC0RkICnmWqR7hF63OaU6XWC8 Th/sZw4xqNh4ncg06TaJeJr9zjIctIIy4W+ZBYsmhPstyuA56M6kJecf 8lFnuJBq9bx6s2perO0h7EyJVq4F0Sho6XwY5OAHSk6OxLKg0PyrZgEC CokGOA==
+se.			7200	IN	NSEC	0.se. NS SOA TXT RRSIG NSEC DNSKEY ZONEMD
+dnsgruppen.se.		7200	IN	NSEC	dnshost.se. NS RRSIG NSEC
+se.			7200	IN	RRSIG	NSEC 8 1 7200 20250328141946 20250314124946 8961 se. Ws7mcZQozcRjIiNxn+eQQTh2eZyUHPNqHdRwW1sHHmXXQhbqSezQwdfc bTf+HnZtTm0KfSb3KY9MVC75A8fObGgqyxUiX03nEnzX2DYBtFMjHku0 zl1/9WywmJdHDJGvKtTcwnFVZ2DmLolk9QajGV474BB6EOOyqaiF1WHv nv6PGjQm7I6IgxBYRJdxA3XeLokdPGb0LoOxbgo7KFUnIEmE98H77r5U YpagUYf96yIQSLyy9L2mrSGQUf2/MRzm4UIGRuzWWOaLXW5RvrBi6I4/ G4y5SIb1HJi+LQ3XY5+R6y/zBmxt5/V7gUAeS/sVj36tMHfS6ZXZML4h U4J5Cg==
+dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 se. riiKhdfeXXpH8nh2XwE6uoeXi64rUQtW6+P6FSMKbvLS6SvFJ6UsYSO+ qHFVJ14pXIahD9RptX5OM2rH2jOeCNrSJjKXxCztzP+5iVOpIJVKrfgh AhGEkvH/4wI6E91wHkoJm1A1dn9jj6Eub2W6npvTpvCHWhedbuIoTHuP 3lK5ZFcYsOqLOj66RvfKUfR05cAD0GmMA59DmAMU20hwgIfRvKmBm7Ls rxqIlvpmlS1fS4Y74ov7cuEwe8GtDy6AEuHURmHxkEvXoz5Nc3Fa0zKT xlufgbOKie9QGIevZF/0wBzq6rAQEzL143tOBVvMvOUaNykUpbVusk1L 2dg1cQ==
+
+;; Query time: 669 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:00:43 CET 2025
+;; MSG SIZE  rcvd: 1129
+
+"
+DOTOT,GOOD,DNSHACKATHON-ffcvinrtlsarqgcwkrlvqobixcbmhczsilms.se,TRUE,2025-03-16 14:01:13.720798,2025-03-16 14:01:14.179955,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-ffcvinrtlsarqgcwkrlvqobixcbmhczsilms.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 38951
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-ffcvinrtlsarqgcwkrlvqobixcbmhczsilms.se. IN A
+
+;; AUTHORITY SECTION:
+se.			7200	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+se.			7200	IN	RRSIG	SOA 8 1 172800 20250330121628 20250316104628 8961 se. gvQnH3hYtaciJTjclixbAaRuDRM7bACsrBQ3U+cSU4GbwKqjPRUjlmA9 lZ9s5h0JvMnCasB185PL9/7fmsmOjzVBxG03qxljtFJ6d8voTPkoA577 bHx+PIE3Np/QfQcTug3sdz5jekKNMufn/ivARiwSY2hKwTIXQaUeWDiJ Cn0pN0XHzcBUYPt8XFYMvNoPaBEQm3dEC0RkICnmWqR7hF63OaU6XWC8 Th/sZw4xqNh4ncg06TaJeJr9zjIctIIy4W+ZBYsmhPstyuA56M6kJecf 8lFnuJBq9bx6s2perO0h7EyJVq4F0Sho6XwY5OAHSk6OxLKg0PyrZgEC CokGOA==
+se.			7200	IN	NSEC	0.se. NS SOA TXT RRSIG NSEC DNSKEY ZONEMD
+dnsgruppen.se.		7200	IN	NSEC	dnshost.se. NS RRSIG NSEC
+se.			7200	IN	RRSIG	NSEC 8 1 7200 20250328141946 20250314124946 8961 se. Ws7mcZQozcRjIiNxn+eQQTh2eZyUHPNqHdRwW1sHHmXXQhbqSezQwdfc bTf+HnZtTm0KfSb3KY9MVC75A8fObGgqyxUiX03nEnzX2DYBtFMjHku0 zl1/9WywmJdHDJGvKtTcwnFVZ2DmLolk9QajGV474BB6EOOyqaiF1WHv nv6PGjQm7I6IgxBYRJdxA3XeLokdPGb0LoOxbgo7KFUnIEmE98H77r5U YpagUYf96yIQSLyy9L2mrSGQUf2/MRzm4UIGRuzWWOaLXW5RvrBi6I4/ G4y5SIb1HJi+LQ3XY5+R6y/zBmxt5/V7gUAeS/sVj36tMHfS6ZXZML4h U4J5Cg==
+dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 se. riiKhdfeXXpH8nh2XwE6uoeXi64rUQtW6+P6FSMKbvLS6SvFJ6UsYSO+ qHFVJ14pXIahD9RptX5OM2rH2jOeCNrSJjKXxCztzP+5iVOpIJVKrfgh AhGEkvH/4wI6E91wHkoJm1A1dn9jj6Eub2W6npvTpvCHWhedbuIoTHuP 3lK5ZFcYsOqLOj66RvfKUfR05cAD0GmMA59DmAMU20hwgIfRvKmBm7Ls rxqIlvpmlS1fS4Y74ov7cuEwe8GtDy6AEuHURmHxkEvXoz5Nc3Fa0zKT xlufgbOKie9QGIevZF/0wBzq6rAQEzL143tOBVvMvOUaNykUpbVusk1L 2dg1cQ==
+
+;; Query time: 438 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:01:14 CET 2025
+;; MSG SIZE  rcvd: 1129
+
+"
+DO53,,DNSHACKATHON-chkyijmfhgueoxrjqtfsajtsmzdipenyyenr.se,FALSE,2025-03-16 14:01:44.684094,2025-03-16 14:01:59.720330,
+DOH,,DNSHACKATHON-qdecjgwpcyshitvcgsursenumvkjuxrgswxy.se,FALSE,2025-03-16 14:02:30.209739,2025-03-16 14:02:30.320956,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-qdecjgwpcyshitvcgsursenumvkjuxrgswxy.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 9094
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-qdecjgwpcyshitvcgsursenumvkjuxrgswxy.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 92 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:02:30 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+cfmjpvtmilmi
+tlovcmevzjxo
+yowebxwyxilw
+bbzrnvlehoxm
+bsakvrzmimdz
+ccktslzdjtes
+cfmjpvtmilmi
+tlovcmevzjxo
+DOHOT,DEFAULT,DNSHACKATHON-wihkvxhimztecxjxmvuxeqzrhreyjrqoergf.se,TRUE,2025-03-16 14:03:00.818891,2025-03-16 14:03:01.285714,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-wihkvxhimztecxjxmvuxeqzrhreyjrqoergf.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 8728
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-wihkvxhimztecxjxmvuxeqzrhreyjrqoergf.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 457 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:03:01 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,GOOD,DNSHACKATHON-ukrbfivjaswfkxwnembiakvmhlzmjodlblfc.se,TRUE,2025-03-16 14:03:31.775383,2025-03-16 14:03:46.807130,
+DOTOT,DEFAULT,DNSHACKATHON-lovccthvevryyumkjapnqiqaewvtrnsipyhm.se,TRUE,2025-03-16 14:04:17.312919,2025-03-16 14:04:17.873875,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-lovccthvevryyumkjapnqiqaewvtrnsipyhm.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 6473
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-lovccthvevryyumkjapnqiqaewvtrnsipyhm.se. IN A
+
+;; AUTHORITY SECTION:
+se.			7200	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+se.			7200	IN	RRSIG	SOA 8 1 172800 20250330121628 20250316104628 8961 se. gvQnH3hYtaciJTjclixbAaRuDRM7bACsrBQ3U+cSU4GbwKqjPRUjlmA9 lZ9s5h0JvMnCasB185PL9/7fmsmOjzVBxG03qxljtFJ6d8voTPkoA577 bHx+PIE3Np/QfQcTug3sdz5jekKNMufn/ivARiwSY2hKwTIXQaUeWDiJ Cn0pN0XHzcBUYPt8XFYMvNoPaBEQm3dEC0RkICnmWqR7hF63OaU6XWC8 Th/sZw4xqNh4ncg06TaJeJr9zjIctIIy4W+ZBYsmhPstyuA56M6kJecf 8lFnuJBq9bx6s2perO0h7EyJVq4F0Sho6XwY5OAHSk6OxLKg0PyrZgEC CokGOA==
+se.			7200	IN	NSEC	0.se. NS SOA TXT RRSIG NSEC DNSKEY ZONEMD
+dnsgruppen.se.		7200	IN	NSEC	dnshost.se. NS RRSIG NSEC
+se.			7200	IN	RRSIG	NSEC 8 1 7200 20250328141946 20250314124946 8961 se. Ws7mcZQozcRjIiNxn+eQQTh2eZyUHPNqHdRwW1sHHmXXQhbqSezQwdfc bTf+HnZtTm0KfSb3KY9MVC75A8fObGgqyxUiX03nEnzX2DYBtFMjHku0 zl1/9WywmJdHDJGvKtTcwnFVZ2DmLolk9QajGV474BB6EOOyqaiF1WHv nv6PGjQm7I6IgxBYRJdxA3XeLokdPGb0LoOxbgo7KFUnIEmE98H77r5U YpagUYf96yIQSLyy9L2mrSGQUf2/MRzm4UIGRuzWWOaLXW5RvrBi6I4/ G4y5SIb1HJi+LQ3XY5+R6y/zBmxt5/V7gUAeS/sVj36tMHfS6ZXZML4h U4J5Cg==
+dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 se. riiKhdfeXXpH8nh2XwE6uoeXi64rUQtW6+P6FSMKbvLS6SvFJ6UsYSO+ qHFVJ14pXIahD9RptX5OM2rH2jOeCNrSJjKXxCztzP+5iVOpIJVKrfgh AhGEkvH/4wI6E91wHkoJm1A1dn9jj6Eub2W6npvTpvCHWhedbuIoTHuP 3lK5ZFcYsOqLOj66RvfKUfR05cAD0GmMA59DmAMU20hwgIfRvKmBm7Ls rxqIlvpmlS1fS4Y74ov7cuEwe8GtDy6AEuHURmHxkEvXoz5Nc3Fa0zKT xlufgbOKie9QGIevZF/0wBzq6rAQEzL143tOBVvMvOUaNykUpbVusk1L 2dg1cQ==
+
+;; Query time: 541 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:04:17 CET 2025
+;; MSG SIZE  rcvd: 1129
+
+"
+DOTOT,GOOD,DNSHACKATHON-uvqyffqhtasjhpbqxnzvepkfdampqqzogtid.se,TRUE,2025-03-16 14:04:48.362211,2025-03-16 14:04:48.754687,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-uvqyffqhtasjhpbqxnzvepkfdampqqzogtid.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 24661
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-uvqyffqhtasjhpbqxnzvepkfdampqqzogtid.se. IN A
+
+;; AUTHORITY SECTION:
+se.			7200	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+se.			7200	IN	RRSIG	SOA 8 1 172800 20250330121628 20250316104628 8961 se. gvQnH3hYtaciJTjclixbAaRuDRM7bACsrBQ3U+cSU4GbwKqjPRUjlmA9 lZ9s5h0JvMnCasB185PL9/7fmsmOjzVBxG03qxljtFJ6d8voTPkoA577 bHx+PIE3Np/QfQcTug3sdz5jekKNMufn/ivARiwSY2hKwTIXQaUeWDiJ Cn0pN0XHzcBUYPt8XFYMvNoPaBEQm3dEC0RkICnmWqR7hF63OaU6XWC8 Th/sZw4xqNh4ncg06TaJeJr9zjIctIIy4W+ZBYsmhPstyuA56M6kJecf 8lFnuJBq9bx6s2perO0h7EyJVq4F0Sho6XwY5OAHSk6OxLKg0PyrZgEC CokGOA==
+se.			7200	IN	NSEC	0.se. NS SOA TXT RRSIG NSEC DNSKEY ZONEMD
+dnsgruppen.se.		7200	IN	NSEC	dnshost.se. NS RRSIG NSEC
+se.			7200	IN	RRSIG	NSEC 8 1 7200 20250328141946 20250314124946 8961 se. Ws7mcZQozcRjIiNxn+eQQTh2eZyUHPNqHdRwW1sHHmXXQhbqSezQwdfc bTf+HnZtTm0KfSb3KY9MVC75A8fObGgqyxUiX03nEnzX2DYBtFMjHku0 zl1/9WywmJdHDJGvKtTcwnFVZ2DmLolk9QajGV474BB6EOOyqaiF1WHv nv6PGjQm7I6IgxBYRJdxA3XeLokdPGb0LoOxbgo7KFUnIEmE98H77r5U YpagUYf96yIQSLyy9L2mrSGQUf2/MRzm4UIGRuzWWOaLXW5RvrBi6I4/ G4y5SIb1HJi+LQ3XY5+R6y/zBmxt5/V7gUAeS/sVj36tMHfS6ZXZML4h U4J5Cg==
+dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 se. riiKhdfeXXpH8nh2XwE6uoeXi64rUQtW6+P6FSMKbvLS6SvFJ6UsYSO+ qHFVJ14pXIahD9RptX5OM2rH2jOeCNrSJjKXxCztzP+5iVOpIJVKrfgh AhGEkvH/4wI6E91wHkoJm1A1dn9jj6Eub2W6npvTpvCHWhedbuIoTHuP 3lK5ZFcYsOqLOj66RvfKUfR05cAD0GmMA59DmAMU20hwgIfRvKmBm7Ls rxqIlvpmlS1fS4Y74ov7cuEwe8GtDy6AEuHURmHxkEvXoz5Nc3Fa0zKT xlufgbOKie9QGIevZF/0wBzq6rAQEzL143tOBVvMvOUaNykUpbVusk1L 2dg1cQ==
+
+;; Query time: 373 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:04:48 CET 2025
+;; MSG SIZE  rcvd: 1129
+
+"
+DO53,,DNSHACKATHON-pzmsdcydnehfxbwmtemksqlrehtwyovrexaa.se,FALSE,2025-03-16 14:05:19.261306,2025-03-16 14:05:34.294610,
+DOH,,DNSHACKATHON-zoonumrlasuaptbuqoxflapkoudwqcuaubcl.se,FALSE,2025-03-16 14:06:04.772558,2025-03-16 14:06:04.844441,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-zoonumrlasuaptbuqoxflapkoudwqcuaubcl.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 43246
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-zoonumrlasuaptbuqoxflapkoudwqcuaubcl.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 52 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:06:04 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,DEFAULT,DNSHACKATHON-vcfafgvgmcpgeqdptqnjllsenrakpnbbicrd.se,TRUE,2025-03-16 14:06:35.325939,2025-03-16 14:06:35.746985,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-vcfafgvgmcpgeqdptqnjllsenrakpnbbicrd.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 39626
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-vcfafgvgmcpgeqdptqnjllsenrakpnbbicrd.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 401 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:06:35 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,GOOD,DNSHACKATHON-tydswczmgycdwlwakmwtprkgsqhlhvrbybyl.se,TRUE,2025-03-16 14:07:06.231129,2025-03-16 14:07:06.557929,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-tydswczmgycdwlwakmwtprkgsqhlhvrbybyl.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 42907
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-tydswczmgycdwlwakmwtprkgsqhlhvrbybyl.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 307 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:07:06 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+yowebxwyxilw
+bbzrnvlehoxm
+bsakvrzmimdz
+ccktslzdjtes
+cfmjpvtmilmi
+tlovcmevzjxo
+yowebxwyxilw
+DOTOT,DEFAULT,DNSHACKATHON-dmsutabsnnxfnnrhopivleodenapbknlhunt.se,TRUE,2025-03-16 14:07:37.053760,2025-03-16 14:07:37.685116,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-dmsutabsnnxfnnrhopivleodenapbknlhunt.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 14040
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-dmsutabsnnxfnnrhopivleodenapbknlhunt.se. IN A
+
+;; AUTHORITY SECTION:
+se.			7200	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+se.			7200	IN	RRSIG	SOA 8 1 172800 20250330121628 20250316104628 8961 se. gvQnH3hYtaciJTjclixbAaRuDRM7bACsrBQ3U+cSU4GbwKqjPRUjlmA9 lZ9s5h0JvMnCasB185PL9/7fmsmOjzVBxG03qxljtFJ6d8voTPkoA577 bHx+PIE3Np/QfQcTug3sdz5jekKNMufn/ivARiwSY2hKwTIXQaUeWDiJ Cn0pN0XHzcBUYPt8XFYMvNoPaBEQm3dEC0RkICnmWqR7hF63OaU6XWC8 Th/sZw4xqNh4ncg06TaJeJr9zjIctIIy4W+ZBYsmhPstyuA56M6kJecf 8lFnuJBq9bx6s2perO0h7EyJVq4F0Sho6XwY5OAHSk6OxLKg0PyrZgEC CokGOA==
+se.			7200	IN	NSEC	0.se. NS SOA TXT RRSIG NSEC DNSKEY ZONEMD
+dnsgruppen.se.		7200	IN	NSEC	dnshost.se. NS RRSIG NSEC
+se.			7200	IN	RRSIG	NSEC 8 1 7200 20250328141946 20250314124946 8961 se. Ws7mcZQozcRjIiNxn+eQQTh2eZyUHPNqHdRwW1sHHmXXQhbqSezQwdfc bTf+HnZtTm0KfSb3KY9MVC75A8fObGgqyxUiX03nEnzX2DYBtFMjHku0 zl1/9WywmJdHDJGvKtTcwnFVZ2DmLolk9QajGV474BB6EOOyqaiF1WHv nv6PGjQm7I6IgxBYRJdxA3XeLokdPGb0LoOxbgo7KFUnIEmE98H77r5U YpagUYf96yIQSLyy9L2mrSGQUf2/MRzm4UIGRuzWWOaLXW5RvrBi6I4/ G4y5SIb1HJi+LQ3XY5+R6y/zBmxt5/V7gUAeS/sVj36tMHfS6ZXZML4h U4J5Cg==
+dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 se. riiKhdfeXXpH8nh2XwE6uoeXi64rUQtW6+P6FSMKbvLS6SvFJ6UsYSO+ qHFVJ14pXIahD9RptX5OM2rH2jOeCNrSJjKXxCztzP+5iVOpIJVKrfgh AhGEkvH/4wI6E91wHkoJm1A1dn9jj6Eub2W6npvTpvCHWhedbuIoTHuP 3lK5ZFcYsOqLOj66RvfKUfR05cAD0GmMA59DmAMU20hwgIfRvKmBm7Ls rxqIlvpmlS1fS4Y74ov7cuEwe8GtDy6AEuHURmHxkEvXoz5Nc3Fa0zKT xlufgbOKie9QGIevZF/0wBzq6rAQEzL143tOBVvMvOUaNykUpbVusk1L 2dg1cQ==
+
+;; Query time: 621 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:07:37 CET 2025
+;; MSG SIZE  rcvd: 1129
+
+"
+DOTOT,GOOD,DNSHACKATHON-roxfudoebxmdrcmbapqwiclbpxadwzoyhaga.se,TRUE,2025-03-16 14:08:08.189483,2025-03-16 14:08:23.224004,
+DO53,,DNSHACKATHON-yfwgygblgcurllttvvaodynngfcakvwrjxiy.se,FALSE,2025-03-16 14:08:53.745866,2025-03-16 14:09:08.778159,
+DOH,,DNSHACKATHON-kzimvynweptvbpdffqxrenoobsirmvgqwrix.se,FALSE,2025-03-16 14:09:39.287940,2025-03-16 14:09:39.390172,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-kzimvynweptvbpdffqxrenoobsirmvgqwrix.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 50004
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-kzimvynweptvbpdffqxrenoobsirmvgqwrix.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 92 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:09:39 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,DEFAULT,DNSHACKATHON-hsrubmzgqxyynlxywjstwnuobwkapgrlyuvo.se,TRUE,2025-03-16 14:10:09.902969,2025-03-16 14:10:10.324466,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-hsrubmzgqxyynlxywjstwnuobwkapgrlyuvo.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 16348
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-hsrubmzgqxyynlxywjstwnuobwkapgrlyuvo.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 402 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:10:10 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,GOOD,DNSHACKATHON-slgugqajpjptrookfgbntiispoplzkanqhvx.se,TRUE,2025-03-16 14:10:40.837031,2025-03-16 14:10:41.640349,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-slgugqajpjptrookfgbntiispoplzkanqhvx.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 26770
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;DNSHACKATHON-slgugqajpjptrookfgbntiispoplzkanqhvx.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 784 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:10:41 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOTOT,DEFAULT,DNSHACKATHON-vgdytecgzyehzjrawhdhlnwoxbdyxrcuxkkj.se,TRUE,2025-03-16 14:11:12.146406,2025-03-16 14:11:12.710897,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-vgdytecgzyehzjrawhdhlnwoxbdyxrcuxkkj.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 17927
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-vgdytecgzyehzjrawhdhlnwoxbdyxrcuxkkj.se. IN A
+
+;; AUTHORITY SECTION:
+se.			7200	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+se.			7200	IN	RRSIG	SOA 8 1 172800 20250330121628 20250316104628 8961 se. gvQnH3hYtaciJTjclixbAaRuDRM7bACsrBQ3U+cSU4GbwKqjPRUjlmA9 lZ9s5h0JvMnCasB185PL9/7fmsmOjzVBxG03qxljtFJ6d8voTPkoA577 bHx+PIE3Np/QfQcTug3sdz5jekKNMufn/ivARiwSY2hKwTIXQaUeWDiJ Cn0pN0XHzcBUYPt8XFYMvNoPaBEQm3dEC0RkICnmWqR7hF63OaU6XWC8 Th/sZw4xqNh4ncg06TaJeJr9zjIctIIy4W+ZBYsmhPstyuA56M6kJecf 8lFnuJBq9bx6s2perO0h7EyJVq4F0Sho6XwY5OAHSk6OxLKg0PyrZgEC CokGOA==
+se.			7200	IN	NSEC	0.se. NS SOA TXT RRSIG NSEC DNSKEY ZONEMD
+dnsgruppen.se.		7200	IN	NSEC	dnshost.se. NS RRSIG NSEC
+se.			7200	IN	RRSIG	NSEC 8 1 7200 20250328141946 20250314124946 8961 se. Ws7mcZQozcRjIiNxn+eQQTh2eZyUHPNqHdRwW1sHHmXXQhbqSezQwdfc bTf+HnZtTm0KfSb3KY9MVC75A8fObGgqyxUiX03nEnzX2DYBtFMjHku0 zl1/9WywmJdHDJGvKtTcwnFVZ2DmLolk9QajGV474BB6EOOyqaiF1WHv nv6PGjQm7I6IgxBYRJdxA3XeLokdPGb0LoOxbgo7KFUnIEmE98H77r5U YpagUYf96yIQSLyy9L2mrSGQUf2/MRzm4UIGRuzWWOaLXW5RvrBi6I4/ G4y5SIb1HJi+LQ3XY5+R6y/zBmxt5/V7gUAeS/sVj36tMHfS6ZXZML4h U4J5Cg==
+dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 se. riiKhdfeXXpH8nh2XwE6uoeXi64rUQtW6+P6FSMKbvLS6SvFJ6UsYSO+ qHFVJ14pXIahD9RptX5OM2rH2jOeCNrSJjKXxCztzP+5iVOpIJVKrfgh AhGEkvH/4wI6E91wHkoJm1A1dn9jj6Eub2W6npvTpvCHWhedbuIoTHuP 3lK5ZFcYsOqLOj66RvfKUfR05cAD0GmMA59DmAMU20hwgIfRvKmBm7Ls rxqIlvpmlS1fS4Y74ov7cuEwe8GtDy6AEuHURmHxkEvXoz5Nc3Fa0zKT xlufgbOKie9QGIevZF/0wBzq6rAQEzL143tOBVvMvOUaNykUpbVusk1L 2dg1cQ==
+
+;; Query time: 545 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:11:12 CET 2025
+;; MSG SIZE  rcvd: 1129
+
+"
+bbzrnvlehoxm
+bsakvrzmimdz
+ccktslzdjtes
+cfmjpvtmilmi
+tlovcmevzjxo
+yowebxwyxilw
+DOTOT,GOOD,DNSHACKATHON-aqmcpgailtveouyfzautldqungonclgxazqs.se,TRUE,2025-03-16 14:11:43.194600,2025-03-16 14:11:43.637723,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-aqmcpgailtveouyfzautldqungonclgxazqs.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 38594
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-aqmcpgailtveouyfzautldqungonclgxazqs.se. IN A
+
+;; AUTHORITY SECTION:
+se.			7200	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+se.			7200	IN	RRSIG	SOA 8 1 172800 20250330121628 20250316104628 8961 se. gvQnH3hYtaciJTjclixbAaRuDRM7bACsrBQ3U+cSU4GbwKqjPRUjlmA9 lZ9s5h0JvMnCasB185PL9/7fmsmOjzVBxG03qxljtFJ6d8voTPkoA577 bHx+PIE3Np/QfQcTug3sdz5jekKNMufn/ivARiwSY2hKwTIXQaUeWDiJ Cn0pN0XHzcBUYPt8XFYMvNoPaBEQm3dEC0RkICnmWqR7hF63OaU6XWC8 Th/sZw4xqNh4ncg06TaJeJr9zjIctIIy4W+ZBYsmhPstyuA56M6kJecf 8lFnuJBq9bx6s2perO0h7EyJVq4F0Sho6XwY5OAHSk6OxLKg0PyrZgEC CokGOA==
+se.			7200	IN	NSEC	0.se. NS SOA TXT RRSIG NSEC DNSKEY ZONEMD
+dnsgruppen.se.		7200	IN	NSEC	dnshost.se. NS RRSIG NSEC
+se.			7200	IN	RRSIG	NSEC 8 1 7200 20250328141946 20250314124946 8961 se. Ws7mcZQozcRjIiNxn+eQQTh2eZyUHPNqHdRwW1sHHmXXQhbqSezQwdfc bTf+HnZtTm0KfSb3KY9MVC75A8fObGgqyxUiX03nEnzX2DYBtFMjHku0 zl1/9WywmJdHDJGvKtTcwnFVZ2DmLolk9QajGV474BB6EOOyqaiF1WHv nv6PGjQm7I6IgxBYRJdxA3XeLokdPGb0LoOxbgo7KFUnIEmE98H77r5U YpagUYf96yIQSLyy9L2mrSGQUf2/MRzm4UIGRuzWWOaLXW5RvrBi6I4/ G4y5SIb1HJi+LQ3XY5+R6y/zBmxt5/V7gUAeS/sVj36tMHfS6ZXZML4h U4J5Cg==
+dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 se. riiKhdfeXXpH8nh2XwE6uoeXi64rUQtW6+P6FSMKbvLS6SvFJ6UsYSO+ qHFVJ14pXIahD9RptX5OM2rH2jOeCNrSJjKXxCztzP+5iVOpIJVKrfgh AhGEkvH/4wI6E91wHkoJm1A1dn9jj6Eub2W6npvTpvCHWhedbuIoTHuP 3lK5ZFcYsOqLOj66RvfKUfR05cAD0GmMA59DmAMU20hwgIfRvKmBm7Ls rxqIlvpmlS1fS4Y74ov7cuEwe8GtDy6AEuHURmHxkEvXoz5Nc3Fa0zKT xlufgbOKie9QGIevZF/0wBzq6rAQEzL143tOBVvMvOUaNykUpbVusk1L 2dg1cQ==
+
+;; Query time: 424 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:11:43 CET 2025
+;; MSG SIZE  rcvd: 1129
+
+"
+DO53,,DNSHACKATHON-buysxlhtbnvnwyhihyefyvujnukotbwpmwra.se,FALSE,2025-03-16 14:12:14.129572,2025-03-16 14:12:29.159089,
+DOH,,DNSHACKATHON-xizkipvzptbaxtpryptfavkmgrufcflgmhvf.se,FALSE,2025-03-16 14:12:59.633145,2025-03-16 14:12:59.747821,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-xizkipvzptbaxtpryptfavkmgrufcflgmhvf.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 24818
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-xizkipvzptbaxtpryptfavkmgrufcflgmhvf.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 94 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:12:59 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,DEFAULT,DNSHACKATHON-mhvmklofwspfbvtjpesrxnozlckjjdewyrku.se,TRUE,2025-03-16 14:13:30.246125,2025-03-16 14:13:30.623102,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-mhvmklofwspfbvtjpesrxnozlckjjdewyrku.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 53690
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-mhvmklofwspfbvtjpesrxnozlckjjdewyrku.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 358 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:13:30 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOHOT,GOOD,DNSHACKATHON-uikjxasvnsmpnvzbjwlkcxvtpoiucfwfcbij.se,TRUE,2025-03-16 14:14:01.104842,2025-03-16 14:14:01.247089,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-uikjxasvnsmpnvzbjwlkcxvtpoiucfwfcbij.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 5779
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;DNSHACKATHON-uikjxasvnsmpnvzbjwlkcxvtpoiucfwfcbij.se. IN A
+
+;; AUTHORITY SECTION:
+se.			599	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+
+;; Query time: 123 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:14:01 CET 2025
+;; MSG SIZE  rcvd: 157
+
+"
+DOTOT,DEFAULT,DNSHACKATHON-dqlmmislknflodkxugnixwsonhrjqiwiclqw.se,TRUE,2025-03-16 14:14:31.734702,2025-03-16 14:14:32.502861,"
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> @172.17.0.1 -p 1337 DNSHACKATHON-dqlmmislknflodkxugnixwsonhrjqiwiclqw.se
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 52168
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 6, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1232
+;; QUESTION SECTION:
+;DNSHACKATHON-dqlmmislknflodkxugnixwsonhrjqiwiclqw.se. IN A
+
+;; AUTHORITY SECTION:
+se.			7200	IN	SOA	catcher-in-the-rye.nic.se. registry-default.nic.se. 1742127388 300 1800 864000 7200
+se.			7200	IN	RRSIG	SOA 8 1 172800 20250330121628 20250316104628 8961 se. gvQnH3hYtaciJTjclixbAaRuDRM7bACsrBQ3U+cSU4GbwKqjPRUjlmA9 lZ9s5h0JvMnCasB185PL9/7fmsmOjzVBxG03qxljtFJ6d8voTPkoA577 bHx+PIE3Np/QfQcTug3sdz5jekKNMufn/ivARiwSY2hKwTIXQaUeWDiJ Cn0pN0XHzcBUYPt8XFYMvNoPaBEQm3dEC0RkICnmWqR7hF63OaU6XWC8 Th/sZw4xqNh4ncg06TaJeJr9zjIctIIy4W+ZBYsmhPstyuA56M6kJecf 8lFnuJBq9bx6s2perO0h7EyJVq4F0Sho6XwY5OAHSk6OxLKg0PyrZgEC CokGOA==
+se.			7200	IN	NSEC	0.se. NS SOA TXT RRSIG NSEC DNSKEY ZONEMD
+dnsgruppen.se.		7200	IN	NSEC	dnshost.se. NS RRSIG NSEC
+se.			7200	IN	RRSIG	NSEC 8 1 7200 20250328141946 20250314124946 8961 se. Ws7mcZQozcRjIiNxn+eQQTh2eZyUHPNqHdRwW1sHHmXXQhbqSezQwdfc bTf+HnZtTm0KfSb3KY9MVC75A8fObGgqyxUiX03nEnzX2DYBtFMjHku0 zl1/9WywmJdHDJGvKtTcwnFVZ2DmLolk9QajGV474BB6EOOyqaiF1WHv nv6PGjQm7I6IgxBYRJdxA3XeLokdPGb0LoOxbgo7KFUnIEmE98H77r5U YpagUYf96yIQSLyy9L2mrSGQUf2/MRzm4UIGRuzWWOaLXW5RvrBi6I4/ G4y5SIb1HJi+LQ3XY5+R6y/zBmxt5/V7gUAeS/sVj36tMHfS6ZXZML4h U4J5Cg==
+dnsgruppen.se.		7200	IN	RRSIG	NSEC 8 2 7200 20250329091731 20250315074731 8961 se. riiKhdfeXXpH8nh2XwE6uoeXi64rUQtW6+P6FSMKbvLS6SvFJ6UsYSO+ qHFVJ14pXIahD9RptX5OM2rH2jOeCNrSJjKXxCztzP+5iVOpIJVKrfgh AhGEkvH/4wI6E91wHkoJm1A1dn9jj6Eub2W6npvTpvCHWhedbuIoTHuP 3lK5ZFcYsOqLOj66RvfKUfR05cAD0GmMA59DmAMU20hwgIfRvKmBm7Ls rxqIlvpmlS1fS4Y74ov7cuEwe8GtDy6AEuHURmHxkEvXoz5Nc3Fa0zKT xlufgbOKie9QGIevZF/0wBzq6rAQEzL143tOBVvMvOUaNykUpbVusk1L 2dg1cQ==
+
+;; Query time: 747 msec
+;; SERVER: 172.17.0.1#1337(172.17.0.1) (UDP)
+;; WHEN: Sun Mar 16 14:14:32 CET 2025
+;; MSG SIZE  rcvd: 1129
+
+"
+DOTOT,GOOD,DNSHACKATHON-wkhybilwxhniapgmnnnzjkaxptaziudqajzt.se,TRUE,2025-03-16 14:15:03.005668,2025-03-16 14:15:18.041445,
