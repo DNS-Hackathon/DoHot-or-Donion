@@ -2,12 +2,12 @@ from .models import Condition, Variant, Protocol
 
 
 CONDITIONS = [
-    Condition(
-        protocol=Protocol.DO53,
-        tor=False,
-        variant=None,
-        docker_run_command=["false"],
-    ),
+#   Condition(
+#       protocol=Protocol.DO53,
+#       tor=False,
+#       variant=None,
+#       docker_run_command=["false"],
+#   ),
     Condition(
         protocol=Protocol.DOH,
         tor=False,
@@ -22,16 +22,16 @@ CONDITIONS = [
             "-p",
             "1337:53/udp",
             "--name",
-            "doh-container",
+            "$NAME",
             "doh-image",
         ],
     ),
-    Condition(
-        protocol=Protocol.DOT,
-        tor=False,
-        variant=None,
-        docker_run_command=["false"],
-    ),
+#   Condition(
+#       protocol=Protocol.DOT,
+#       tor=False,
+#       variant=None,
+#       docker_run_command=["false"],
+#   ),
     Condition(
         protocol=Protocol.DOHOT,
         tor=True,
@@ -46,7 +46,7 @@ CONDITIONS = [
             "-p",
             "1337:53/udp",
             "--name",
-            "dohot-container",
+            "$NAME",
             "dohot-image",
         ],
     ),
@@ -64,7 +64,7 @@ CONDITIONS = [
             "-p",
             "1337:53/udp",
             "--name",
-            "dohot-container",
+            "$NAME",
             "-e",
             "ENTRY_NODES=se",
             "-e",
@@ -88,7 +88,7 @@ CONDITIONS = [
             "-p",
             "1337:8053/udp",
             "--name",
-            "dotot-container",
+            "$NAME",
             "dotot-image",
         ],
     ),
@@ -106,7 +106,7 @@ CONDITIONS = [
             "-p",
             "1337:8053/udp",
             "--name",
-            "dotot-container",
+            "$NAME",
             "-e",
             "ENTRY_NODES=se",
             "-e",
