@@ -1,3 +1,4 @@
+import datetime
 from enum import Enum, auto
 from dataclasses import dataclass
 
@@ -50,3 +51,10 @@ class Condition:
 
     def docker_stop(self):
         run(["docker", "stop", self.container_name])
+
+@dataclasses
+class Measurement:
+    condition: Condition
+    domain_name: str
+    dig_begin: datetime.datetime
+    dig_end: datetime.datetime

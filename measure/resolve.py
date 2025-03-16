@@ -3,8 +3,8 @@ from logging import getLogger
 from time import sleep
 
 from .settings import TOR_PROTOCOLS
-from .random_domain_name import random_domain_name
-from .models import Condition
+from .random_name import random_domain_name
+from .models import Condition, Measurement
 
 logger = getLogger(__name__)
 
@@ -20,6 +20,7 @@ docker", "run", "--rm", "-d", "-p", "1337:8053/tcp", "-p", "1337:8053/udp", "--n
 
 
 def measure(condition: Condition):
+    domain_name = random_domain_name()
     if condition.tor:
         resolver = "172.17.0.1"
         port = 1337
@@ -28,14 +29,14 @@ def measure(condition: Condition):
         port = 53
     logger.info(f"Starting {protocol}")
     run(DOCKER_RUN[protocol], stdout=DEVNULL)
-    logger.info("Sending random NXDOMAIN query")
-    run(["dig", f"@{resolver}", "-p", str(port), random_domain_name()
-
-    run(["docker", "stop dohot-container
-elif [ $1 = 'doh' ]; then
-    echo "$(date +"%Y-%m-%dT%H:%M:%S"): Stopping DoH"
-    docker stop doh-container
-elif [[ $1 = "dotot"* ]]; then
-    echo "$(date +"%Y-%m-%dT%H:%M:%S"): Stopping DoToT"
-    docker stop dotot-container
-fi
+    logger.info(f"Sending random NXDOMAIN query for {domain_name}")
+    dig_begin = datetime.datetime.now()
+    run(["dig", f"@{resolver}", "-p", str(port), domain_name])
+    dig_end = datetime.datetime.now()
+    run(["docker", "stop", condition.container_name])
+    return Measurement(
+        condition=condition,
+        domain_name=domain_name,
+        dig_begin=dig_begin,
+        dig_end=dig_end,
+    )
