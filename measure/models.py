@@ -55,7 +55,7 @@ class Condition:
         run(args, stdout=DEVNULL, check=True)
 
     def docker_stop(self):
-        run(["docker", "stop", self.container_name], check=True)
+        run(["docker", "stop", self.container_name], check=True, stdout=DEVNULL)
 
 
 @dataclass

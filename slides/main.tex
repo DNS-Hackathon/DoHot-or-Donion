@@ -43,12 +43,13 @@
                 \item DNS-over-HTTPS-over-Tor (DoHoT)
             \end{itemize}
         \end{itemize}
+        \pause
         \vspace{1em}
         Goal: change configurations and compare performance
         \begin{itemize}
             \item Identify parameters
             \item Create containers for protocols
-            \item Measure latency
+            \item Measure latency: \texttt{DNSHACKATHON-\{random\}.se}
         \end{itemize}
     \end{frame}
 
@@ -60,6 +61,7 @@
         Exit $\rightarrow$
         DoH Resolver
 
+        \pause
         \vspace{1em}
         \textbf{Idea 1:}
         Client $\rightarrow$
@@ -67,14 +69,15 @@
         Nearby Exit $\rightarrow$
         DoH/DoT Resolver
 
+        \pause
         \vspace{1em}
         \textbf{Idea 2:}
         Client $\rightarrow$
         Nearby Entry $\rightarrow$
         Nearby Exit Resolver
 
+        \pause
         \vspace{2em}
-
         \begin{columns}
             \begin{column}{.5\textwidth}
                 \begin{itemize}
@@ -83,9 +86,11 @@
                     \item DNS-over-TLS (DoT)
                 \end{itemize}
             \end{column}
+            \pause
             \begin{column}{.5\textwidth}
                 \begin{itemize}
                     \item \sout{DNS-over-Tor (DoTor)}
+                    \item DNS-over-Tor (DoTor)
                     \item DoH-over-Tor (DoHoT)
                     \item DoT-over-Tor (DoToT)
                 \end{itemize}
@@ -94,10 +99,14 @@
     \end{frame}
 
     \begin{frame}{Measurement}
-        A single unique query via each protocol X times:
-        \texttt{DNSHACKATHON-\{random\}.se}\\
-        \vspace{2em}
-        TODO: Graph
+        \begin{columns}
+            \begin{column}{.5\textwidth}
+                \includegraphics[width=\textwidth]{img/p1.pdf}
+            \end{column}
+            \begin{column}{.5\textwidth}
+                \includegraphics[width=\textwidth]{img/p2.pdf}
+            \end{column}
+        \end{columns}
     \end{frame}
 
     \begin{frame}{Artifacts}
