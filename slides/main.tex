@@ -44,7 +44,7 @@
         \end{itemize}
     \end{frame}
 
-    \begin{frame}{DoHoT}
+    \begin{frame}{Protocols}
         \textbf{Default:}
         Client $\rightarrow$
         Entry $\rightarrow$
@@ -53,11 +53,51 @@
         DoH Resolver
 
         \vspace{1em}
-        \textbf{Idea:}
+        \textbf{Idea 1:}
         Client $\rightarrow$
         Nearby Entry $\rightarrow$
         Nearby Exit $\rightarrow$
-        DoH Resolver
+        DoH/DoT Resolver
+
+        \vspace{1em}
+        \textbf{Idea 2:}
+        Client $\rightarrow$
+        Nearby Entry $\rightarrow$
+        Nearby Exit Resolver
+
+        \vspace{2em}
+
+        \begin{columns}
+            \begin{column}{.5\textwidth}
+                \begin{itemize}
+                    \item Normal DNS (Do53)
+                    \item DNS-over-HTTPS (DoH)
+                    \item DNS-over-TLS (DoT)
+                \end{itemize}
+            \end{column}
+            \begin{column}{.5\textwidth}
+                \begin{itemize}
+                    \item DNS-over-Tor (DoTor)
+                    \item DoH-over-Tor (DoHoT)
+                    \item DoT-over-Tor (DoToT)
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Measurement}
+        A single query via a fresh protocol X times:
+        \texttt{DNSHACKATHON-\{random\}.se}\\
+        \vspace{2em}
+        TODO: Graph
+    \end{frame}
+
+    \begin{frame}{Artifacts}
+        \url{https://github.com/DNS-Hackathon/DoHot-or-Donion}
+        \begin{itemize}
+            \item Docker Containers for Protocols
+            \item Performance Measurement Interface
+        \end{itemize}
     \end{frame}
 
 \end{document}
