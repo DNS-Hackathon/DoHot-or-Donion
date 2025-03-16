@@ -21,4 +21,8 @@ WORKDIR /etc/dnscrypt-proxy
 COPY torrc_template /etc/tor/torrc
 COPY relays.py .
 COPY bootup.sh .
+COPY dotor-client-tor-resolve.py .
+CMD ["python -m venv .venv"]
+CMD ["source .venc/bin/activate"]
 CMD ["./bootup.sh"]
+

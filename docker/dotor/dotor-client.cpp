@@ -8,6 +8,8 @@
 //#include <arpa/inet.h>
 //#include <unistd.h>
 
+//Abandoned dude to time-constraints, used python instead
+
 int main(){
 
     //Set up listening
@@ -23,7 +25,7 @@ int main(){
     int socketInput = accept(dnsSocket, nullptr, nullptr);
     char buffer[1024] = {0};
     recv(dnsSocket, buffer, sizeof(buffer), 0);
-    std::cout << "Message from client: " << buffer << std::endl;
-    close(dnsSocket);
+    std::cout << "Message from client: " << buffer << "end"<< std::endl;
+    shutdown(dnsSocket,0);
 
 }

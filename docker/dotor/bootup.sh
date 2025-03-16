@@ -16,6 +16,9 @@ else
 fi
 service tor restart
 
+
+nohup python3 dotor-client-tor-resolve.py &
+
 if [ "$HOPS" = "2" ]; then
     echo "Creating a two-hop circuit"
     fp1=$(python3 relays.py --cc ${ENTRY_NODES:-any} --role entry)
