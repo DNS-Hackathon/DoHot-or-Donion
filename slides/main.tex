@@ -1,0 +1,57 @@
+\documentclass[xcolor=x11names,dvipsnames,aspectratio=169]{beamer}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usepackage[absolute,overlay]{textpos}
+
+\setbeamercovered{transparent}
+
+\usetikzlibrary{positioning,arrows,snakes}
+\tikzset{set/.style={draw,circle,inner sep=0pt,align=center}}
+\tikzset{brace/.style={decorate, decoration={brace}},
+  brace mirrored/.style={decorate, decoration={brace,mirror}}}
+	\pgfdeclarelayer{background}
+	\pgfsetlayers{background,main}
+
+\usetheme{Dart}
+
+\title{\huge DoHoT or Donion aka ``DoHoT 2 Handle''}
+\subtitle{Performance of Anonymous DNS Queries}
+\author{\small Jonathan, Tom, Tor, Alfred}
+\date{\today}
+
+\setcounter{showSlideNumbers}{1}
+
+\begin{document}
+    \setcounter{showProgressBar}{0}
+	\setcounter{showSlideNumbers}{0}
+
+	\frame{\titlepage}
+
+	\setcounter{framenumber}{0}
+	\setcounter{showProgressBar}{1}
+	\setcounter{showSlideNumbers}{1}
+
+    \begin{frame}{Introduction}
+        \begin{itemize}
+            \item Anonymous Queries
+            \item Proxy between Client and Resolver
+            \begin{itemize}
+                \item Oblivious DNS
+                \item Oblivious DNS-over-HTTPS (ODoH)
+                \item DNS-over-HTTPS-over-Tor (DoHoT)
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{DoHoT}
+        \textbf{Default:}
+        Client $\rightarrow$
+        Entry $\rightarrow$
+        Middle $\rightarrow$
+        Exit $\rightarrow$
+        DoH Resolver
+
+    \end{frame}
+
+\end{document}
