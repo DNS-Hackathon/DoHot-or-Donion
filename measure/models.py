@@ -41,7 +41,7 @@ class Condition:
         if self.container_name is not None:
             self.container_name = random_container_name()
 
-        if self.docker_run_command[:4] != DOCKER_RUN_PREFIX:
+        if self.docker_run_command[:4] not in (DOCKER_RUN_PREFIX, ["false", "$NAME"]):
             raise ValueError(f"docker_run_command must start with {DOCKER_RUN_PREFIX}")
 
         if NAME_PLACEHOLDER not in self.docker_run_command:

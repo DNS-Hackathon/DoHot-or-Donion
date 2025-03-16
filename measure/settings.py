@@ -2,12 +2,12 @@ from .models import Condition, Variant, Protocol
 
 
 CONDITIONS = [
-#   Condition(
-#       protocol=Protocol.DO53,
-#       tor=False,
-#       variant=None,
-#       docker_run_command=["false"],
-#   ),
+    Condition(
+        protocol=Protocol.DO53,
+        tor=False,
+        variant=None,
+        docker_run_command=["false", "$NAME"],
+    ),
     Condition(
         protocol=Protocol.DOH,
         tor=False,
@@ -26,12 +26,12 @@ CONDITIONS = [
             "doh-image",
         ],
     ),
-#   Condition(
-#       protocol=Protocol.DOT,
-#       tor=False,
-#       variant=None,
-#       docker_run_command=["false"],
-#   ),
+    Condition(
+        protocol=Protocol.DOT,
+        tor=False,
+        variant=None,
+        docker_run_command=["false", "$NAME"],
+    ),
     Condition(
         protocol=Protocol.DOHOT,
         tor=True,
