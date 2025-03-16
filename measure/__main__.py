@@ -2,9 +2,7 @@ from sys import stdout
 from logging import basicConfig, WARNING
 from csv import DictWriter
 
-from .ui import ui
-from .__init__ import anonymous_dns
-
+from .__init__ import measure
 
 basicConfig(level=WARNING)
 
@@ -25,7 +23,7 @@ writer = DictWriter(
 
 try:
     writer.writeheader()
-    for record in ui(anonymous_dns):
+    for record in measure():
         writer.writerow(record)
 except BrokenPipeError:
     pass
