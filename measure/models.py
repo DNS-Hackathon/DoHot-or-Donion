@@ -21,7 +21,7 @@ class Protocol(Enum):
 
 
 @dataclass
-class TorVariant(Enum):
+class Variant(Enum):
     DEFAULT = auto()
     BAD = auto()
     GOOD = auto()
@@ -31,9 +31,9 @@ class TorVariant(Enum):
 class Condition:
     protocol: Protocol
     tor: bool
-    variant: TorVariant | None
+    variant: Variant | None
     docker_run_command: list[str]
-    container_name: str | None
+    container_name: str | None = None
 
     def __post_init__(self):
         if self.tor == (self.variant is None):
@@ -64,3 +64,4 @@ class Measurement:
     domain_name: str
     dig_begin: datetime.datetime
     dig_end: datetime.datetime
+    dig_out: str | None

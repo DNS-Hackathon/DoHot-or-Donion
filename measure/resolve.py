@@ -1,8 +1,8 @@
-from subprocess import DEVNULL, run
+import datetime
+from subprocess import check_output, CalledProcessError
 from logging import getLogger
 from time import sleep
 
-from .settings import TOR_PROTOCOLS
 from .random_name import random_domain_name
 from .models import Condition, Measurement
 
@@ -17,17 +17,23 @@ def resolve(condition: Condition):
     else:
         resolver = "1.1.1.1"
         port = 53
-    logger.info(f"Starting {protocol}")
-    run(DOCKER_RUN[protocol], stdout=DEVNULL)
+    logger.info(f"Starting %s", condition.protocol)
+    condition.docker_run()
     sleep(20)
-    logger.info(f"Sending random NXDOMAIN query for {domain_name}")
+    logger.info(f"Sending random NXDOMAIN query for %s", domain_name)
     dig_begin = datetime.datetime.now()
-    run(["dig", f"@{resolver}", "-p", str(port), domain_name])
+    try:
+        dig_out = check_output(
+            ["dig", f"@{resolver}", "-p", str(port), domain_name]
+        ).encode("utf-8")
+    except CalledProcessError:
+        dig_out = None
     dig_end = datetime.datetime.now()
-    run(["docker", "stop", condition.container_name])
+    condition.docker_stop()
     return Measurement(
         condition=condition,
         domain_name=domain_name,
         dig_begin=dig_begin,
         dig_end=dig_end,
+        dig_out=dig_out,
     )
