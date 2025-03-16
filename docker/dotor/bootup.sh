@@ -16,7 +16,10 @@ else
 fi
 service tor restart
 
-
+python -m venv .venv
+source .venc/bin/activate
+pip install upgrade
+pip install dnspython
 nohup python3 dotor-client-tor-resolve.py &
 
 if [ "$HOPS" = "2" ]; then
