@@ -19,10 +19,17 @@ def main():
             data, a = s_in.recvfrom(1024)
             client_host, client_port = a
             hostname, id = extract_hostname(data)
-            r_sample.id=id
+            correct_id = id.to_bytes(2,'big')
+            r_sample.id=id #doesn't work
+            q_r = dnsmessage.from_wire(r_sample.response.to_wire())
             response = subprocess.check_output(['tor-resolve', hostname])
-            print(f'{response} with id {id} from {client_host} at port {client_port}\nSent (id:{r_sample.id}):\n{r_sample.response.to_wire()}\n')
-            s_in.sendto(r_sample.response.to_wire(), a)
+            q = q_r.to_wire() 
+            b_tmp = bytearray(q)
+            b_tmp[0] = correct_id[0] #this is so inelegant its not ok, but i have like 5min
+            b_tmp[1] = correct_id[1]
+            q = bytes(b_tmp)
+            print(f'{response} with id {id} from {client_host} at port {client_port}\nSent (id:{q_r.id}):\n{q}\n')
+            s_in.sendto(q, a)
 
 
         
