@@ -26,6 +26,7 @@ def row(measurement):
             if measurement.condition.variant is None
             else measurement.condition.variant.name
         ),
+        "domain_name": measurement.domain_name,
         "tor": "TRUE" if measurement.condition.tor else "FALSE",
         "dig_begin": measurement.dig_begin,
         "dig_end": measurement.dig_end,
