@@ -9,8 +9,10 @@ RUN apt install -y python3.11 python3.11-venv python3.11-dev
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
 RUN apt install -y python3-pip
 RUN apt remove -y python3-cryptography
+#RUN pip install dnspython --break-system-packages
 RUN pip install carml --break-system-packages
 RUN pip install stem --break-system-packages
+RUN apt install -y dnsutils
 RUN rm -rf /var/lib/apt/lists/*
 
 ENV ENTRY_NODES=

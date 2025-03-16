@@ -34,14 +34,14 @@ while [[ "$#" -gt 0 ]]; do
     esac
 done
 
-docker stop dohot-container
-docker rm dohot-container
-docker build -t dohot-image .
-docker run --rm --name dohot-container \
+docker stop dotor-container
+docker rm dotor-container
+docker build -t dotor-image .
+docker run --rm --name dotor-container \
     -e ENTRY_NODES="$ENTRY" \
     -e EXIT_NODES="$EXIT" \
     -e EXCLUDE_NODES="$EXCLUDE" \
     -e HOPS="$HOPS" \
-    -p 127.0.0.1:1337:53/udp \
-    -p 127.0.0.1:1337:53/tcp \
-    dohot-image
+    -p 127.0.0.1:1337:1337/udp \
+    -p 127.0.0.1:1337:1337/tcp \
+    dotor-image

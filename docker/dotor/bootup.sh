@@ -16,11 +16,6 @@ else
 fi
 service tor restart
 
-python -m venv .venv
-source .venc/bin/activate
-pip install upgrade
-pip install dnspython
-nohup python3 dotor-client-tor-resolve.py &
 
 if [ "$HOPS" = "2" ]; then
     echo "Creating a two-hop circuit"
@@ -41,4 +36,9 @@ if [ "$HOPS" = "2" ]; then
     done
 fi
 
+python3 -m venv .venv
+source .venv/bin/activate
+pip install dnspython
+nohup python3 dotor-client-tor-resolve.py &
+sleep infinity
 

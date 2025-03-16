@@ -11,7 +11,7 @@ def extract_hostname(data) -> str:
 
 def main():
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s_in:
-        s_in.bind(('', 1337))
+        s_in.bind(('0.0.0.0', 1337))
         #s_in.listen()
         while True:
             data, a = s_in.recvfrom(1024)
