@@ -17,10 +17,10 @@ def resolve(condition: Condition):
     else:
         resolver = "1.1.1.1"
         port = 53
-    logger.info(f"Starting %s", condition.protocol)
+    logger.info("Starting %s", condition.protocol)
     condition.docker_run()
     sleep(20)
-    logger.info(f"Sending random NXDOMAIN query for %s", domain_name)
+    logger.info("Sending random NXDOMAIN query for %s", domain_name)
     dig_begin = datetime.datetime.now()
     try:
         dig_out = check_output(
