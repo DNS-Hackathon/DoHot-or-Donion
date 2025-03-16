@@ -50,7 +50,7 @@ round_robin_upstreams: 1
 # This keeps idle TLS connections open to avoid the overhead of opening a new 
 # connection for every query.
 #
-idle_timeout: 10000
+idle_timeout: 50000
 
 # Control the maximum number of connection failures that will be permitted
 # before Stubby backs-off from using an individual upstream (default 2)
